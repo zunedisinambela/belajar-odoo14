@@ -9,6 +9,7 @@
     'license': 'LGPL-3',
     'depends': [],
     'data': [
+        'security/ir.model.access.csv',
         'views/patient.xml',
     ],
     'qweb': [],
