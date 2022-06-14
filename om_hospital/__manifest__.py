@@ -8,7 +8,9 @@
     'website': 'https://www.odoomates.tech',
     'license': 'LGPL-3',
     'depends': [],
-    'data': [],
+    'data': [
+        'views/patient.xml',
+    ],
     'qweb': [],
     'installable': True,
     'application': True,
