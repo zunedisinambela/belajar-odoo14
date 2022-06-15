@@ -36,6 +36,18 @@
         </field>
     </record>
 
+    <record id="patient_search" model="ir.ui.view">
+        <field name="name">hospital.patient.search</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+            <search string="Patients">
+                <field name="name"/>
+                <field name="note"/>
+                <separator/>
+            </search>
+        </field>
+    </record>
+
     <record id="patient_action" model="ir.actions.act_window">
         <field name="name">Judul Patients 1</field>
         <field name="type">ir.actions.act_window</field>
@@ -52,5 +64,6 @@
 
     <menuitem id="hospital_patient_root" name="Patients 1" parent="hospital_root" sequence="10"/>
 
-    <menuitem id="hospital_patient" name="Patients 2" parent="hospital_patient_root" sequence="10" action="patient_action"/>
+    <menuitem id="hospital_patient" name="Patients 2" parent="hospital_patient_root" sequence="10"
+              action="patient_action"/>
 </odoo>
