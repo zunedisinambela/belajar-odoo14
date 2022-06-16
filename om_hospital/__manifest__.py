@@ -9,6 +9,7 @@
     'license': 'LGPL-3',
     'depends': [
         'sale',
+        'mail',
     ],
     'data': [
         'security/ir.model.access.csv',
