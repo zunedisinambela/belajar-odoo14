@@ -7,7 +7,9 @@
     'category': 'Productivity',
     'website': 'https://www.odoomates.tech',
     'license': 'LGPL-3',
-    'depends': ['sale'],
+    'depends': [
+        'sale',
+    ],
     'data': [
         'security/ir.model.access.csv',
         'views/patient.xml',
@@ -15,6 +17,7 @@
     ],
     'demo': [],
     'qweb': [],
+    'images': ['static/description/icon.png'],
     'installable': True,
     'application': True,
     'auto_install': False,
