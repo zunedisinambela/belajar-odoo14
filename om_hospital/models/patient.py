@@ -6,20 +6,20 @@ class HospitalPatient(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Hospital Patient"
 
-    name = fields.Char(string='Name', required=True)
-    age = fields.Char(string='Age')
+    name = fields.Char(string='Name', required=True, tracking=True)
+    age = fields.Char(string='Age', tracking=True)
     gender = fields.Selection([
         ('male', 'Male'),
         ('female', 'Female'),
         ('other', 'other'),
-    ], required=True, default='male')
-    note = fields.Text(string='Description')
+    ], required=True, default='male', tracking=True)
+    note = fields.Text(string='Description', tracking=True)
     state = fields.Selection([
         ('draft', 'Draft'),
         ('confirm', 'Confirmed'),
         ('done', 'Done'),
         ('cancel', 'Cancel')
-    ], default='draft', string="Status")
+    ], default='draft', string="Status", tracking=True)
 
     def action_confirm(self):
         self.state = 'confirm'
