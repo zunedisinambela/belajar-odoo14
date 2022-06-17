@@ -1,2 +1,2 @@
-# belejar odoo13
+# belajar odoo13
  
