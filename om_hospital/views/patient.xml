@@ -67,6 +67,11 @@
                     <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
                 </header>
                 <sheet>
+                    <div>
+                        <h1 class="oe_title">
+                            <field name="reference" readonly="1"/>
+                        </h1>
+                    </div>
                     <group>
                         <group>
                             <field name="name"/>
