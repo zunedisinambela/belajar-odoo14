@@ -113,12 +113,12 @@
         </field>
     </record>
 
-    <record id="patient_action" model="ir.actions.act_window">
+    <record id="action_hospital_patient" model="ir.actions.act_window">
         <field name="name">Judul Patients 1</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">hospital.patient</field>
         <field name="view_mode">tree,kanban,form</field>
-        <field name="context">{'search_default_gender': 1, 'search_default_patient_age': 1, 'search_default_responsible_id': 1}</field>
+        <field name="context">{'search_default_responsible_id': 1, 'search_default_male': 1}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create your first patient!
@@ -131,5 +131,5 @@
     <menuitem id="hospital_patient_root" name="Patients 1" parent="hospital_root" sequence="10"/>
 
     <menuitem id="hospital_patient" name="Patients 2" parent="hospital_patient_root" sequence="10"
-              action="patient_action"/>
+              action="action_hospital_patient"/>
 </odoo>
