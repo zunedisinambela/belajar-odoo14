@@ -40,7 +40,7 @@
                     <group>
                         <group>
                             <field name="patient_id"/>
-                            <field name="gender"/>
+                            <field name="gender" readonly="1" force_save="1"/>
                             <field name="age"/>
                         </group>
                         <group>
